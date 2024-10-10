@@ -52,6 +52,7 @@ if not check_password():
 # Main Streamlit app starts here
 st.title(st.secrets['app']['title'])
 st.write(st.secrets['app']['description'])
+st.write(st.secrets['app']['help'])
 
 # Display the current issues as a Markdown to-do list
 st.markdown(st.secrets['todo']['list'])
@@ -60,5 +61,6 @@ st.markdown(st.secrets['todo']['list'])
 st.dataframe(df, use_container_width=True)
 
 # Display the provided block of Python code with syntax highlighting
-st.subheader('Next version of the prompt template')
+st.subheader('Next version of the prompt template:')
 st.code(st.secrets['code']['block'], language='python')
+st.code(st.secrets['code']['block2'], language='python')
