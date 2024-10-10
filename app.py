@@ -60,5 +60,5 @@ st.markdown(st.secrets['todo']['list'])
 st.dataframe(df, use_container_width=True)
 
 # Display the provided block of Python code with syntax highlighting
-st.subheader('Current version of the prompt template')
+st.subheader('Next version of the prompt template')
 st.code(st.secrets['code']['block'], language='python')
